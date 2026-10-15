@@ -1,0 +1,398 @@
+{
+  "repository": "Amankendi/voicestudio",
+  "source_base": "c2dc7621868b378e74f4585fd188b57486d0ca9e",
+  "settings_observed_at": "2026-10-15T13:52:37.195546+00:00",
+  "settings": {
+    "deploy_keys": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "branch": {
+      "status": "PASS",
+      "data": {
+        "name": "main",
+        "sha": "c2dc7621868b378e74f4585fd188b57486d0ca9e",
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        }
+      }
+    },
+    "branch_protection": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "rulesets": {
+      "status": "PASS",
+      "data": []
+    },
+    "actions_permissions": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "workflow_permissions": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "fork_approval": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "dependabot_alerts": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "secret_scanning_alerts": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "code_scanning_alerts": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    }
+  },
+  "collaborator_role_counts": {
+    "admin": 1
+  },
+  "original_secret_scan": {
+    "repository": "Amankendi/voicestudio",
+    "scanner": "gitleaks 8.30.1",
+    "binary_sha256": "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb",
+    "scope": "all locally mirrored Git refs, including fetched PR refs",
+    "exit_code": 1,
+    "status": "FAIL",
+    "findings": [
+      {
+        "RuleID": "generic-api-key",
+        "File": "frontend/src/components/dub/DubResizableColumns.jsx",
+        "StartLine": 3,
+        "EndLine": 3,
+        "Commit": "243220fc3a085570ff55b2d8fe2640644fe0aebf",
+        "Fingerprint": "243220fc3a085570ff55b2d8fe2640644fe0aebf:frontend/src/components/dub/DubResizableColumns.jsx:generic-api-key:3",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "backend/worker/identity.py",
+        "StartLine": 88,
+        "EndLine": 88,
+        "Commit": "43de1c794c0d20b7bb1c2481743dbcabea800415",
+        "Fingerprint": "43de1c794c0d20b7bb1c2481743dbcabea800415:backend/worker/identity.py:generic-api-key:88",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "backend/services/hf_revisions.py",
+        "StartLine": 50,
+        "EndLine": 50,
+        "Commit": "80fc38169d5478b365b4462cf9ca4e2e3136ff09",
+        "Fingerprint": "80fc38169d5478b365b4462cf9ca4e2e3136ff09:backend/services/hf_revisions.py:generic-api-key:50",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "backend/core/analytics.py",
+        "StartLine": 57,
+        "EndLine": 57,
+        "Commit": "23f1767e3c4f971cc5d8e4c8b84fb17337b69bc5",
+        "Fingerprint": "23f1767e3c4f971cc5d8e4c8b84fb17337b69bc5:backend/core/analytics.py:generic-api-key:57",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "frontend/src/utils/analytics.ts",
+        "StartLine": 44,
+        "EndLine": 44,
+        "Commit": "23f1767e3c4f971cc5d8e4c8b84fb17337b69bc5",
+        "Fingerprint": "23f1767e3c4f971cc5d8e4c8b84fb17337b69bc5:frontend/src/utils/analytics.ts:generic-api-key:44",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "tests/backend/core/test_logging_filter.py",
+        "StartLine": 12,
+        "EndLine": 12,
+        "Commit": "4a6b978df97b5cc12f68e94ab4130addf878c8dc",
+        "Fingerprint": "4a6b978df97b5cc12f68e94ab4130addf878c8dc:tests/backend/core/test_logging_filter.py:generic-api-key:12",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "backend/api/routers/dub_translate.py",
+        "StartLine": 124,
+        "EndLine": 124,
+        "Commit": "67328d04fec71c4986ef866f994d5dd48c3ccb6b",
+        "Fingerprint": "67328d04fec71c4986ef866f994d5dd48c3ccb6b:backend/api/routers/dub_translate.py:generic-api-key:124",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "backend/api/routers/dub_translate.py",
+        "StartLine": 133,
+        "EndLine": 133,
+        "Commit": "67328d04fec71c4986ef866f994d5dd48c3ccb6b",
+        "Fingerprint": "67328d04fec71c4986ef866f994d5dd48c3ccb6b:backend/api/routers/dub_translate.py:generic-api-key:133",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      }
+    ]
+  },
+  "proposed_secret_gate": {
+    "check": "gitleaks-history",
+    "version": "8.30.1",
+    "exit_code": 1,
+    "status": "FAIL",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "rule": "generic-api-key",
+        "file": "backend/core/analytics.py",
+        "line": 57,
+        "commit": "a2f5630bac980122a652e7258dd17063b2c20a0f"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "frontend/src/utils/analytics.ts",
+        "line": 44,
+        "commit": "a2f5630bac980122a652e7258dd17063b2c20a0f"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "frontend/src/components/dub/DubResizableColumns.jsx",
+        "line": 3,
+        "commit": "243220fc3a085570ff55b2d8fe2640644fe0aebf"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "backend/worker/identity.py",
+        "line": 88,
+        "commit": "43de1c794c0d20b7bb1c2481743dbcabea800415"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "backend/services/hf_revisions.py",
+        "line": 50,
+        "commit": "80fc38169d5478b365b4462cf9ca4e2e3136ff09"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "frontend/src/utils/analytics.ts",
+        "line": 44,
+        "commit": "e3ed95237193306b07dc8074669bb871cecb82c4"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "backend/core/analytics.py",
+        "line": 57,
+        "commit": "e3ed95237193306b07dc8074669bb871cecb82c4"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "backend/core/analytics.py",
+        "line": 57,
+        "commit": "23f1767e3c4f971cc5d8e4c8b84fb17337b69bc5"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "frontend/src/utils/analytics.ts",
+        "line": 44,
+        "commit": "23f1767e3c4f971cc5d8e4c8b84fb17337b69bc5"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "tests/backend/core/test_logging_filter.py",
+        "line": 12,
+        "commit": "4a6b978df97b5cc12f68e94ab4130addf878c8dc"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "backend/api/routers/dub_translate.py",
+        "line": 124,
+        "commit": "67328d04fec71c4986ef866f994d5dd48c3ccb6b"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "backend/api/routers/dub_translate.py",
+        "line": 133,
+        "commit": "67328d04fec71c4986ef866f994d5dd48c3ccb6b"
+      }
+    ]
+  },
+  "local_sast": {
+    "check": "semgrep-local-rules",
+    "exit_code": 0,
+    "status": "PASS",
+    "candidate_count": 0,
+    "candidates": [],
+    "error_count": 0
+  },
+  "dependency_counts_before": null,
+  "dependency_counts_after": null,
+  "osv_affected_package_entries": 28,
+  "osv_unique_advisory_ids": [
+    "GHSA-2mjx-qc3c-rqvc",
+    "GHSA-4j2p-28q2-5m79",
+    "GHSA-54p9-h82j-f925",
+    "GHSA-5639-2j2p-m4mx",
+    "GHSA-6688-9rhm-gjv2",
+    "GHSA-68fv-2mgg-jv7q",
+    "GHSA-6j4f-fj2g-mc7p",
+    "GHSA-6qxp-vccf-f47h",
+    "GHSA-866g-f22w-33x8",
+    "GHSA-8mgp-746c-j5xp",
+    "GHSA-c3wx-c55w-pxjq",
+    "GHSA-c475-qrg2-pj4r",
+    "GHSA-ch52-4w7c-c8xp",
+    "GHSA-h35f-9h28-mq5c",
+    "GHSA-h3mg-xc3c-68pw",
+    "GHSA-hp3w-g68c-fv3c",
+    "GHSA-hrr3-gc8f-f4qj",
+    "GHSA-j6r3-76f7-8jcv",
+    "GHSA-jqcg-44mw-7w3h",
+    "GHSA-mwj6-rfh8-7qf4",
+    "GHSA-p98j-92pf-mc4p",
+    "GHSA-pqg4-j6r4-53mv",
+    "GHSA-q2hr-2g5m-vwhr",
+    "GHSA-qfhq-4f3w-5fph",
+    "GHSA-qhr7-859c-m2p7",
+    "GHSA-rqx7-p7vv-w7hr",
+    "GHSA-rrmf-rvhw-rf47",
+    "GHSA-v5jw-96jm-7h2c",
+    "GHSA-vfj7-8cjw-p6xm",
+    "GHSA-vgrw-7cvw-pwgx",
+    "PYSEC-2025-203",
+    "PYSEC-2025-204",
+    "PYSEC-2025-206",
+    "PYSEC-2026-139",
+    "PYSEC-2026-2286",
+    "PYSEC-2026-3075",
+    "PYSEC-2026-3447",
+    "PYSEC-2026-3804",
+    "RUSTSEC-2026-0285",
+    "RUSTSEC-2026-0338",
+    "RUSTSEC-2026-0340",
+    "RUSTSEC-2026-0343",
+    "RUSTSEC-2026-0346",
+    "RUSTSEC-2026-0347",
+    "RUSTSEC-2026-0348",
+    "RUSTSEC-2026-0349"
+  ],
+  "recovery": {
+    "repository": "Amankendi/voicestudio",
+    "status": "PASS",
+    "scope": "local code bundle restoration only; no offsite/data/LFS/host-state claim",
+    "steps_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "9471f2870f288fc20d967af62c571949d4f2d93f35a98263fae3a2efd24eeb47",
+    "bytes": 131845614
+  },
+  "workflow_source": [
+    {
+      "workflow": "electron-build.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "cosyvoice-dependencies.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "ci.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "build-omnivoice-tts.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "alkendi-security.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "commit-identity.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": true,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "docs-drift.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "cla.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": true,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "security.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "docker.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "electron-release.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "evals.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "install-smoke.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    }
+  ]
+}
