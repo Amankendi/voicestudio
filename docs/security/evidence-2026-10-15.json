@@ -394,5 +394,9 @@
       "privileged_trigger": false,
       "yaml_valid": true
     }
-  ]
+  ],
+  "remaining_advisories": [],
+  "validation": {
+    "evidence": "See report and CI; no full upstream product-suite claim"
+  }
 }
