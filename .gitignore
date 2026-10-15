@@ -183,3 +183,14 @@ backend/assets/samples/demo/dubbing/*.src.wav
 
 # Generated Windows MSI diagnostic logs and installer payloads
 /wix-diagnostic-artifacts/
+
+# ALKENDI security baseline: local secrets and recovery bundles
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+!.env.*.sample
+!.env.*.template
+*.bundle

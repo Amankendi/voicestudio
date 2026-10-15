@@ -1,0 +1,40 @@
+name: ALKENDI Security
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: alkendi-security-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  secrets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Reject private dotenv files
+        run: python3 scripts/security/check-env.py
+      - name: Scan fetched Git history with redacted output
+        run: bash scripts/security/run-gitleaks.sh
+
+  sast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install pinned community scanner
+        run: python3 -m pip install --disable-pip-version-check semgrep==1.181.0
+      - name: Check local security rules without uploading source
+        run: bash scripts/security/run-semgrep.sh

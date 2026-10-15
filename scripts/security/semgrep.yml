@@ -1,0 +1,22 @@
+rules:
+  - id: alkendi-dynamic-eval
+    languages: [javascript, typescript]
+    message: Review dynamic code execution and remove it from untrusted input paths.
+    severity: ERROR
+    pattern: eval(...)
+    paths:
+      exclude: ["**/tests/**", "**/test/**", "**/node_modules/**"]
+  - id: alkendi-python-shell
+    languages: [python]
+    message: Review shell execution; use an argument list and shell=False.
+    severity: ERROR
+    pattern: subprocess.$FUNC(..., shell=True, ...)
+    paths:
+      exclude: ["**/tests/**", "**/test/**"]
+  - id: alkendi-python-tls
+    languages: [python]
+    message: TLS certificate verification must stay enabled.
+    severity: ERROR
+    pattern: requests.$METHOD(..., verify=False, ...)
+    paths:
+      exclude: ["**/tests/**", "**/test/**"]
